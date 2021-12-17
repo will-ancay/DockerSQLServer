@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+    mssql:
+      image: "mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04"
+      restart: on-failure
+      ports:
+        - "1433:1433"
+      environment:
+        MSSQL_TCP_PORT: 1433
+        MSSQL_AGENT_ENABLED: "True"
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "Movidesk.*"
+        MSSQL_PID: "Developer"
+        MSSQL_MEMORY_LIMIT_MB: "2048"
