@@ -9,6 +9,6 @@ services:
         MSSQL_TCP_PORT: 1433
         MSSQL_AGENT_ENABLED: "True"
         ACCEPT_EULA: "Y"
-        SA_PASSWORD: "Movidesk.*"
+        SA_PASSWORD: "dbwill123"
         MSSQL_PID: "Developer"
         MSSQL_MEMORY_LIMIT_MB: "2048"
